@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Fabián Rondón</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; }
+    header { background-color: #0a2342; color: #fff; position: fixed; top: 0; width: 100%; z-index: 1000;
+      display: flex; justify-content: space-between; align-items: center; padding: 15px 50px; }
+    header h1 { font-size: 1.2rem; letter-spacing: 1px; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 500; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 100px 60px; max-width: 1100px; margin: auto; }
+    #inicio { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+      background: linear-gradient(135deg, #0a2342, #1a3a6e); color: white; text-align: center; }
+    #inicio h2 { font-size: 2.2rem; margin-bottom: 15px; }
+    #inicio p { max-width: 700px; font-size: 1.1rem; line-height: 1.8; }
+    #sobre-mi h2, #proyectos h2, #contacto h2 { color: #0a2342; margin-bottom: 20px; font-size: 1.8rem; }
+    #sobre-mi p { margin-bottom: 10px; text-align: justify; }
+    .proyectos { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+    .card { background: #f5f7fa; border-radius: 10px; padding: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .card h3 { color: #0a2342; margin-bottom: 10px; }
+    .card p { margin-bottom: 8px; font-size: 0.95rem; }
+    footer { background-color: #0a2342; color: #fff; text-align: center; padding: 30px 20px; }
+    footer a { color: #a8c4ff; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    @media(max-width:768px){ header{ flex-direction: column; text-align: center; } nav { margin-top: 10px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FABIÁN RONDÓN</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Administrador Financiero | QA Functional Analyst</h2>
+    <p>Apasionado por optimizar procesos, garantizar la calidad del software y fortalecer la eficiencia operativa a través del análisis detallado y la mejora continua. Con más de 10 años de experiencia en el sector financiero y tecnológico, integro la visión analítica del negocio con la ejecución técnica de pruebas funcionales, asegurando entregas confiables y soluciones que generan valor real a las organizaciones.</p>
+  </section>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy Administrador Financiero con más de una década de experiencia en el sector financiero y tecnológico, especializado en gestión de proyectos, análisis de incidentes y control de calidad (QA Testing). A lo largo de mi trayectoria he liderado procesos de levantamiento de requerimientos, validación funcional, ejecución de pruebas y aseguramiento de la calidad en entornos de alta exigencia.</p>
+    <p>Mi objetivo profesional es garantizar la estabilidad, funcionalidad y confiabilidad de los productos tecnológicos a través de una gestión estructurada, comunicación efectiva y análisis detallado de cada proceso.</p>
+    <p>Me caracterizo por una fuerte orientación a resultados, pensamiento crítico y capacidad para integrar la tecnología con las necesidades del negocio, contribuyendo al logro de objetivos estratégicos y a la satisfacción del cliente.</p>
+    <p><strong>Herramientas:</strong> JIRA · AS400 · POSTMAN · SQL · JSON · PYTHON · SELENIUM WEB DRIVER</p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos Destacados</h2>
+    <div class="proyectos">
+      <div class="card">
+        <h3>Requisitos del Backend de Urban Grocers</h3>
+        <p><strong>Contexto:</strong> Validación del consumo de un API para la creación, modificación, consulta y eliminación de productos, incluyendo la gestión del servicio de entrega con horarios y costos variables.</p>
+        <p><strong>Análisis:</strong> Se diseñaron y ejecutaron casos de prueba funcionales utilizando POSTMAN, validando los distintos formatos de envío en JSON y SOAP. Se implementó la trazabilidad de bugs mediante JIRA, garantizando la identificación oportuna de errores y su corrección eficiente.</p>
+        <p><strong>Conclusiones principales:</strong> El proyecto reforzó las buenas prácticas en el manejo de APIs y documentación de resultados, logrando una mayor precisión en las validaciones y reducción de incidentes en producción.</p>
+      </div>
+      <div class="card">
+        <h3>Requisitos para Solicitar un Vehículo – Urban Routes</h3>
+        <p><strong>Contexto:</strong> Desarrollo y validación de un módulo que permitiera al usuario solicitar un vehículo, evaluando la disponibilidad, costo y tiempo del trayecto según el tipo de ruta y dirección.</p>
+        <p><strong>Análisis:</strong> Se crearon y ejecutaron casos de prueba positivos y negativos para validar el comportamiento del sistema bajo diferentes escenarios. Se gestionó la documentación de defectos en JIRA, asegurando trazabilidad y colaboración entre los equipos de QA y desarrollo.</p>
+        <p><strong>Conclusiones principales:</strong> El proyecto fortaleció la metodología de aseguramiento de calidad, promoviendo la automatización de pruebas y el mejor entendimiento del ciclo de vida del software.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📧 <strong>Correo:</strong> <a href="mailto:fabian.orlando.r@gmail.com">fabian.orlando.r@gmail.com</a></p>
+    <p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fabian-rondon" target="_blank">www.linkedin.com/in/fabian-rondon</a></p>
+    <p>📱 <strong>Teléfono:</strong> +57 310 625 8050</p>
+    <p>📍 <strong>Ubicación:</strong> Colombia</p>
+  </section>
+
+  <footer>
+    <p>“La calidad no es un acto, es un hábito. La mejora continua es el camino hacia la excelencia.”</p>
+    <p>&copy; 2025 Fabián Rondón | Portafolio Profesional</p>
+  </footer>
+</body>
+</html>
